@@ -20,7 +20,7 @@ def zapis_csv(jmeno, hodnoty):
 def precti_csv(jmeno):
     with open(jmeno, mode="r", newline="") as soubor:
         cteni = csv.reader(soubor, delimiter=";")
-        return tuple(cteni)  # Vracíme tuple místo listu
+        return tuple(cteni)
 
 zapis_csv(jmeno_souboru, zadane_hodnoty)
 vystup = precti_csv(jmeno_souboru)
